@@ -1,3 +1,33 @@
 body{
-    background-color: #4cb9a7;
+    background-color:rgb(55, 146, 116);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* CSS for header og nav */
+
+header{
+    text-align: center;
+    background-image: url("img/ltchr.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+header nav ul {
+    margin: 1rem 0 0 0;
+    padding: 0;
+
+}
+
+header nav span a{ /*refererer til logoen vår i html så vi kan endre den*/
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    display: inline-block;
+
 }
