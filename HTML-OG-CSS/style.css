@@ -31,3 +31,24 @@ nav a{
     display: inline-block;
 
 }
+
+
+main{
+    text-align: center;
+
+}
+
+main section h2{ /* det er her 'latest news' seksjonen er*/
+    margin: 2rem 0;
+
+}
+
+article{
+    max-width: 414px;
+    min-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+}
+main section article img{
+    width: 100%;
+}
