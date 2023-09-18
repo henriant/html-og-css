@@ -3,7 +3,8 @@
 
 
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <link rel="stylesheet" href="style.css" type="tekst/css"> <!--- linker til CSS dokumentet vårt. Rel="stylesheet" forteller at forholdet mellom doumenttet vi linker til og html er style. etter href setter vi inn style dokumentet vårt-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <title>Forside</title>
     </head>
@@ -25,6 +26,63 @@
             <h1>Hello World!</h1> <!-- det som står i en h1 tag skal alltid representere hva resten av nettsiden handler om-->
             <p>Slagord</p>
         </header>
+
+        <main> <!-- dette er hovedinnholdet på siden. Man kan kun ha en av denne--> 
+            <section>
+                <h2>Latest news</h2>
+                <article> <!-- innholdet i arcitle er selvstendig i forhold til innnholdet rundt -->
+                    <img src="img/Navnløs.jpg" alt="episk bilde av katt">
+                    <h3>episk bilde av en katt som er sjokkert</h3>
+                    <p>These are the same Jawas that sold us Artoo and Threepio. And these blast points, too accurate for Sandpeople. Only Imperial stormtroopers are so precise.
+                        Why would Imperial troops want to slaughter Jawas? If they traced the robots here, they may have learned who they sold them to. </p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+
+                <article>
+                    <img src="img/funny-cat-3.jpg" alt="morsom katt som stirrer haha">
+                    <h3>En morsom katt</h3>
+                    <p>Governor Tarkin, we have an emergency alert in detention block A A-twenty-three.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+
+                <article>
+                    <img src="img/360_F_577791293_i3HhJIR4GIQxzcD1JNNVY3qNLohk1xGy.jpg" alt="groovy skilpadde">
+                    <h3>Skilpadde er dritkul</h3>
+                    <p>The princess! Put all sections on alert! Obi-Wan is here.</p>
+                    <a href="#" class="read-more-btn">Les mer</a>
+                </article>
+
+            </section>
+        </main>
+        <section>
+            <div id="pynt"> <!-- Div er ULOVLIG å bruke i struktur, og skal KUN brukes til design og pynt!!!-->
+
+            </div> 
+            <h2>About</h2>
+            <p>Why are we still moving towards it? We're caught in a tractor beam! But there's gotta be something you can do! There's nothin' I can do about it, kid. I'm in full power. I'm going to have to shut down. But they're not going to get me without a fight! You can't win. But there are alternatives to fighting. </p>
+        </section>
+        <section>
+            <h3>Subscribe</h3>
+            <form>
+                <label for="email-signup">Email for newsletter sign-up</label>
+                <input type="text" id="email-signup">
+                <input type="submit" value="Sign up">
+            </form>
+        </section>
+        <footer> <!-- typisk å skrive her copyright, hvem som har laget nettsiden, osv-->
+            <nav>
+                <ul>
+                    <li> <a href="#">about</a> </li>
+                    <li> <a href="#">subscribe</a> </li>
+                    <li> <a href="#">contact</a> </li>
+                </ul>
+            </nav>
+            <ul id="social-media-icons">
+                <li>f</li> <!-- her skal vi sette inn logo til facebook, instagram, pinterest osv senere. Setter in f, i og p så lenge. -->
+                <li>i</li>
+                <li>p</li>
+            </ul>
+        </footer>
     </body>
 
 
