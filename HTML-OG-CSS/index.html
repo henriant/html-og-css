@@ -54,14 +54,14 @@
 
             </section>
         </main>
-        <section>
+        <section id="about-section"> <!---Når vi bruker ID kan vi linke til dem gjennom shortcuts, bruke dem i javascript og css --->
             <div id="pynt"> <!-- Div er ULOVLIG å bruke i struktur, og skal KUN brukes til design og pynt!!!-->
 
             </div> 
             <h2>About</h2>
             <p>Why are we still moving towards it? We're caught in a tractor beam! But there's gotta be something you can do! There's nothin' I can do about it, kid. I'm in full power. I'm going to have to shut down. But they're not going to get me without a fight! You can't win. But there are alternatives to fighting. </p>
         </section>
-        <section>
+        <section id="subscribe">
             <h3>Subscribe</h3>
             <form>
                 <label for="email-signup">Email for newsletter sign-up</label>
@@ -72,9 +72,12 @@
         <footer> <!-- typisk å skrive her copyright, hvem som har laget nettsiden, osv-->
             <nav>
                 <ul>
-                    <li> <a href="#">about</a> </li>
-                    <li> <a href="#">subscribe</a> </li>
-                    <li> <a href="#">contact</a> </li>
+                    <!-- linker til id som gheter about-section, laget snarvei-->
+                    <li> <a href="#about-section">about</a> </li> <!-- disse dokumentene finnes ikke enda, men man kan lage egne dokumenter med disse navnene for å linke til dem gjennom nettsiden-->
+                   <!-- linker til annet html dokument (side) på nettstedet-->
+                    <li> <a href="subscribe.html">subscribe</a> </li>
+                    <!-- linker til et annet nettsted-->
+                    <li> <a href="https://google.com">contact</a> </li>
                 </ul>
             </nav>
             <ul id="social-media-icons">

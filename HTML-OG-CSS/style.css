@@ -1,5 +1,14 @@
+*{                  /*forteller at dette skal gjelde ALT. vær VELDIG forsiktig med å bruke denne*/
+    box-sizing: border-box;
+}
+
+html{
+    font-size: calc(1em + 1vw); /* Denne formelen gjør teksten vår responsiv. em betyr ta utgangspunkt i pixelverdi på font-size. 1em er 16px på de fleste nettsteder. 1vw forteller at det skal være en del av visningsbredden, altså nettleservinduet. Dersom vinduet blir mindre kalkulerer den utifra det.*/
+}
+
+
 body{
-    background-color:rgb(55, 146, 116);
+    background-color:#3cb88e;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -47,8 +56,68 @@ article{
     max-width: 414px;
     min-width: 240px;
     width: 100%;
-    margin: 0 auto;
+    margin: 1rem auto; /* 1rem er topp og bunn, auto gjør at article blir senterjustert sideveis avhengig av skjermstørrelse*/
+    background-color: #ffffff
 }
 main section article img{
     width: 100%;
 }
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 1.4rem;
+    margin: 15px;
+}
+
+/* bruker . når vi skriver til klasser*/
+.read-more-btn{
+    background-color: #3b3b3b;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+#about-section{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#about-section p{
+    text-align: justify;
+    padding: 2rem;
+}
+
+#pynt{
+    background-image: url("img/wp7550896.png");
+    height: 300px;
+    background-size: cover;
+    margin: 2rem;
+}
+
+#subscribe{
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+#subscribe form label, #subscribe form input{ /*dette er teksten foran input tekstfeltet for subscribe, og selve input feltet*/
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+
