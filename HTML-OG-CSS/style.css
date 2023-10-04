@@ -121,3 +121,30 @@ p{
 }
 
 
+footer nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer nav ul li a{
+    padding: 0.5rem;
+}
+
+#social-media-icons{
+    margin: 1rem, 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+#social-media-icons li{
+    color: #ffffff;
+    display: inline-block;
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 40%;
+}
